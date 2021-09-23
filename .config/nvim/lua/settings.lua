@@ -15,4 +15,4 @@ vim.o.ignorecase = true
 
 vim.o.clipboard = "unnamedplus" -- copy/paste to another apps
 
-vim.opt.updatetime=90
+vim.opt.updatetime=50

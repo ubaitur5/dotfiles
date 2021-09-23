@@ -49,3 +49,5 @@ export RANGER_LOAD_DEFAULT_RC=FALSE
 export BROWSER="firefox"
 export EDITOR="nvim"
 
+path+=('/home/br/.local/bin')
+export PATH
