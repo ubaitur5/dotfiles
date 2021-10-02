@@ -45,9 +45,10 @@ alias s_u="sudo cp config.def.h config.h&&sudo make clean install"
 
 
 #Variables
-export RANGER_LOAD_DEFAULT_RC=FALSE
 export BROWSER="firefox"
 export EDITOR="nvim"
 
 path+=('/home/br/.local/bin')
+path+=('/home/br/go/bin')
+
 export PATH

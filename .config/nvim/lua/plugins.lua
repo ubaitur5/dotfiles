@@ -11,8 +11,8 @@ require "paq" {
 
     --Colorschemes
     "folke/lsp-colors.nvim"; -- creates missing lsp colors 
-    "morhetz/gruvbox";
     "tomasr/molokai";
+    "nanotech/jellybeans.vim";
 
     --Markdown live preview
     "iamcco/markdown-preview.nvim";
@@ -30,5 +30,4 @@ require "paq" {
 
     "hoob3rt/lualine.nvim";
     "kyazdani42/nvim-web-devicons";
-
 }
