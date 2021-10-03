@@ -10,9 +10,8 @@ require "paq" {
     "sheerun/vim-polyglot"; --language pack
 
     --Colorschemes
-    "folke/lsp-colors.nvim"; -- creates missing lsp colors 
-    "tomasr/molokai";
-    "nanotech/jellybeans.vim";
+    "nvim-treesitter/nvim-treesitter";
+    "navarasu/onedark.nvim";
 
     --Markdown live preview
     "iamcco/markdown-preview.nvim";
