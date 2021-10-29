@@ -4,46 +4,44 @@ env:
   LC_CTYPE: en_US.UTF-8
 font:
   normal:
-    family: Fira Mono
+    family: Fira Code Nerd Font
     style: Light
   bold:
-    family: Fira Mono
+    family: Fira Code Nerd Font
     style: Medium
   italic:
     family: Fira Mono
   size: 14
   use_thin_strokes: true
+# github Alacritty Colors
 colors:
   # Default colors
   primary:
-    background: '#1f2329'
-    foreground: '#abb2bf'
+    background: '0x24292e'
+    foreground: '0xd1d5da'
 
   # Normal colors
   normal:
-    # NOTE: Use '#131613' for the `black` color if you'd like to see
-    # black text on the background.
-    black: '#282c34'
-    red: '#e06c75'
-    green: '#98c379'
-    yellow: '#d19a66'
-    blue: '#61afef'
-    magenta: '#c678dd'
-    cyan: '#56b6c2'
-    white: '#abb2bf'
+    black:   '0x24292e'
+    red:     '0xf14c4c'
+    green:   '0x23d18b'
+    yellow:  '0xe2e210'
+    blue:    '0x3b8eea'
+    magenta: '0xbc3fbc'
+    cyan:    '0x29b7da'
+    white:   '0xd1d5da'
 
   # Bright colors
   bright:
-    black: '#5c6370'
-    red: '#e06c75'
-    green: '#98c379'
-    yellow: '#d19a66'
-    blue: '#61afef'
-    magenta: '#c678dd'
-    cyan: '#56b6c2'
-    white: '#ffffff'
-window:
-  dimensions:
-    columns: 0
-    lines: 0
-  decorations: none
+    black:   '0x666666'
+    red:     '0xf14c4c'
+    green:   '0x23d18b'
+    yellow:  '0xf5f543'
+    blue:    '0x3b8eea'
+    magenta: '0xd670d6'
+    cyan:    '0x29b7da'
+    white:   '0xd1d5da'
+
+  indexed_colors:
+    - { index: 16, color: '0xd18616' }
+    - { index: 17, color: '0xf14c4c' }

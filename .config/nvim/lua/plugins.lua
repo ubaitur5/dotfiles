@@ -1,32 +1,46 @@
+-- This file can be loaded by calling `lua require('useins')` from your init.vim
 
-require "paq" {
-    "savq/paq-nvim";  -- Let Paq manage itself
+vim.cmd [[packadd packer.nvim]]
 
-    "neovim/nvim-lspconfig";--lsp support
-    "hrsh7th/nvim-compe"; --enables autocompletion
+return require('packer').startup(function()
+  use 'wbthomason/packer.nvim'
 
-    "windwp/nvim-autopairs";
+  use "neovim/nvim-lspconfig"--lsp support
 
-    "sheerun/vim-polyglot"; --language pack
+  --Colorschemes
+  use "projekt0n/github-nvim-theme"
 
-    --Colorschemes
-    "nvim-treesitter/nvim-treesitter";
-    "navarasu/onedark.nvim";
+  --Motions
+  use  "tpope/vim-surround"
+  use  "tpope/vim-repeat"
+  use  "tpope/vim-commentary"
 
-    --Markdown live preview
-    "iamcco/markdown-preview.nvim";
+  -- Autocompletion
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
 
-    --Snippets
-    "hrsh7th/vim-vsnip";
-    "rafamadriz/friendly-snippets";
+  --Autopairs
+  use 'windwp/nvim-autopairs'
+  --Tree and icons
+  use {
+      'kyazdani42/nvim-tree.lua',
+      requires = 'kyazdani42/nvim-web-devicons',
+      config = function() require'nvim-tree'.setup {} end
+  }
 
-    --Motions
-    "tpope/vim-surround";
-    "tpope/vim-repeat";
-    "tpope/vim-commentary";
-    "phaazon/hop.nvim";
+  use 'nvim-lualine/lualine.nvim'
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      require("which-key").setup {
+      }
+    end
+  }
 
-
-    "hoob3rt/lualine.nvim";
-    "kyazdani42/nvim-web-devicons";
-}
+end)

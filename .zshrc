@@ -36,7 +36,6 @@ alias n="nvim"
 alias v="vim"
 
 
-alias s="startx"
 alias zt="zathura"
 
 #Configs
@@ -50,5 +49,6 @@ export EDITOR="nvim"
 
 path+=('/home/br/.local/bin')
 path+=('/home/br/go/bin')
+path+=('/home/br/.emacs.d/bin')
 
 export PATH
