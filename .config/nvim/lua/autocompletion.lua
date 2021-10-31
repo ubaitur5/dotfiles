@@ -21,6 +21,7 @@ cmp.setup({
      { name = 'nvim_lsp' },
      { name = 'vsnip' }, -- For vsnip users.
      { name = 'buffer' },
+     { name = 'path' },
    })
  })
  
@@ -29,7 +30,7 @@ cmp.setup({
  -- Use buffer source for `/`.
  cmp.setup.cmdline('/', {
    sources = {
-     { name = 'buffer' }
+     { name = 'buffer' },
    }
  })
 

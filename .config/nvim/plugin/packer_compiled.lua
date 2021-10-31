@@ -105,14 +105,26 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/br/.local/share/nvim/site/pack/packer/start/nvim-cmp"
   },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/home/br/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/br/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-solarized-lua"] = {
+    loaded = true,
+    path = "/home/br/.local/share/nvim/site/pack/packer/start/nvim-solarized-lua"
   },
   ["nvim-tree.lua"] = {
     config = { "\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
     path = "/home/br/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/br/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -126,6 +138,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/br/.local/share/nvim/site/pack/packer/start/vim-commentary"
   },
+  ["vim-nightfly-guicolors"] = {
+    loaded = true,
+    path = "/home/br/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors"
+  },
   ["vim-repeat"] = {
     loaded = true,
     path = "/home/br/.local/share/nvim/site/pack/packer/start/vim-repeat"
@@ -137,11 +153,6 @@ _G.packer_plugins = {
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/br/.local/share/nvim/site/pack/packer/start/vim-vsnip"
-  },
-  ["which-key.nvim"] = {
-    config = { "\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14which-key\frequire\0" },
-    loaded = true,
-    path = "/home/br/.local/share/nvim/site/pack/packer/start/which-key.nvim"
   }
 }
 
@@ -150,10 +161,6 @@ time([[Defining packer_plugins]], false)
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
--- Config for: which-key.nvim
-time([[Config for which-key.nvim]], true)
-try_loadstring("\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14which-key\frequire\0", "config", "which-key.nvim")
-time([[Config for which-key.nvim]], false)
 if should_profile then save_profiles() end
 
 end)

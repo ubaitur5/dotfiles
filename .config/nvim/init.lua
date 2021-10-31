@@ -1,5 +1,6 @@
 require('plugins')
 require('lsp')
+require('treesitter')
 
 
 
@@ -22,16 +23,17 @@ vim.opt.shortmess = vim.opt.shortmess + 'c'
 --Lualine
 require('lualine').setup{
   options = {
-    theme='github'
+    theme='solarized'
   }
     }
 
 --Setting colorscheme
-require('github-theme').setup({
-  theme_style = "dark",
-  function_style = "italic",
-  colors = {hint = "orange", error = "#ff0000"}}
-  )
+-- require('github-theme').setup({
+--   theme_style = "dark",
+--   function_style = "italic",
+--   colors = {hint = "orange", error = "#ff0000"}}
+--   )
+vim.cmd[[colorscheme solarized]]
 
 --to automatically run :PackerCompile whenever plugins.lua is updated
 vim.cmd([[

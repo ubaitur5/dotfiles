@@ -1,4 +1,3 @@
--- This file can be loaded by calling `lua require('useins')` from your init.vim
 
 vim.cmd [[packadd packer.nvim]]
 
@@ -7,8 +6,15 @@ return require('packer').startup(function()
 
   use "neovim/nvim-lspconfig"--lsp support
 
+  use 'williamboman/nvim-lsp-installer'
+
   --Colorschemes
   use "projekt0n/github-nvim-theme"
+  use 'bluz71/vim-nightfly-guicolors'
+  use 'ishan9299/nvim-solarized-lua'
+
+  -- Treesitter
+  use 'nvim-treesitter/nvim-treesitter'
 
   --Motions
   use  "tpope/vim-surround"
@@ -22,11 +28,13 @@ return require('packer').startup(function()
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
   
+  --Snippets
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
 
   --Autopairs
   use 'windwp/nvim-autopairs'
+
   --Tree and icons
   use {
       'kyazdani42/nvim-tree.lua',
@@ -34,13 +42,8 @@ return require('packer').startup(function()
       config = function() require'nvim-tree'.setup {} end
   }
 
+  
+  --Statusline
   use 'nvim-lualine/lualine.nvim'
-  use {
-    "folke/which-key.nvim",
-    config = function()
-      require("which-key").setup {
-      }
-    end
-  }
 
 end)
