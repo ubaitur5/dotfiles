@@ -12,6 +12,7 @@ return require('packer').startup(function()
   use "projekt0n/github-nvim-theme"
   use 'bluz71/vim-nightfly-guicolors'
   use 'ishan9299/nvim-solarized-lua'
+  use 'Mofiqul/vscode.nvim'
 
   -- Treesitter
   use 'nvim-treesitter/nvim-treesitter'

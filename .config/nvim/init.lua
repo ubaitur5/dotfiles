@@ -23,7 +23,7 @@ vim.opt.shortmess = vim.opt.shortmess + 'c'
 --Lualine
 require('lualine').setup{
   options = {
-    theme='solarized'
+    theme='vscode'
   }
     }
 
@@ -33,7 +33,9 @@ require('lualine').setup{
 --   function_style = "italic",
 --   colors = {hint = "orange", error = "#ff0000"}}
 --   )
-vim.cmd[[colorscheme solarized]]
+vim.g.vscode_style = "dark"
+vim.cmd[[colorscheme vscode]]
+
 
 --to automatically run :PackerCompile whenever plugins.lua is updated
 vim.cmd([[

@@ -153,6 +153,10 @@ _G.packer_plugins = {
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/br/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "/home/br/.local/share/nvim/site/pack/packer/start/vscode.nvim"
   }
 }
 
